@@ -1,0 +1,6 @@
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.FontHelper\bin\Debug\UpgradeHelpers.FontHelper.dll
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.FontHelper\bin\Debug\UpgradeHelpers.FontHelper.pdb
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.FontHelper\obj\x86\Debug\UpgradeHelpers.FontHelper.csprojAssemblyReference.cache
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.FontHelper\obj\x86\Debug\UpgradeHelpers.FontHelper.csproj.CoreCompileInputs.cache
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.FontHelper\obj\x86\Debug\UpgradeHelpers.FontHelper.dll
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.FontHelper\obj\x86\Debug\UpgradeHelpers.FontHelper.pdb

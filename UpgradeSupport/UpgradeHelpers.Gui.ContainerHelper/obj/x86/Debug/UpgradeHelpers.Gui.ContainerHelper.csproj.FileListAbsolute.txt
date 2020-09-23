@@ -1,0 +1,9 @@
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\bin\Debug\UpgradeHelpers.Gui.ContainerHelper.dll
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\bin\Debug\UpgradeHelpers.Gui.ContainerHelper.pdb
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\bin\Debug\UpgradeHelpers.Utils.dll
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\bin\Debug\UpgradeHelpers.Utils.pdb
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\obj\x86\Debug\UpgradeHelpers.Gui.ContainerHelper.csprojAssemblyReference.cache
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\obj\x86\Debug\UpgradeHelpers.Gui.ContainerHelper.csproj.CoreCompileInputs.cache
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\obj\x86\Debug\UpgradeHelpers.Gui.ContainerHelper.csproj.CopyComplete
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\obj\x86\Debug\UpgradeHelpers.Gui.ContainerHelper.dll
+I:\BiblCal-10-50-Code-Split\BiblCal_.Net\UpgradeSupport\UpgradeHelpers.Gui.ContainerHelper\obj\x86\Debug\UpgradeHelpers.Gui.ContainerHelper.pdb
