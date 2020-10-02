@@ -52,7 +52,7 @@ namespace BiblCal
 		}
 		//*******************************************************************************************
 		//*                            CALENDAR CONVERSION PROGRAM                                  *
-		//*                                       Ver 10.42                                         *
+		//*                                       Ver 11.0                                         *
 		//*     Converts between Gregorian date, Hebrew date Biblical date and Julian Day Count     *
 		//*                                          -                                              *
 		//*   Written by:         Dale D. Donelson, 22 November 2006                                *
@@ -249,7 +249,7 @@ namespace BiblCal
 			//3)Take the Julian Day Count and convert to Gregorian date and place results in text boxes
 			UpDateGregorian(); //Update the Gregorian Calendar variables
 			//4) Compute the Biblical dates and put results in the text boxes
-			UpDateBiblical(); //Update the Biblical Calendar variables
+			UpDateBiblical(); //Update the Calculated Biblical Calendar variables
 			//5) Compute the Hebrew dates and put results in the text boxes
 			UpDateHebrew(); //Update the Hebrew Calendar variables
 			UpDateJulianCalendar(); //Update the Julian Calendar variables

@@ -51,9 +51,9 @@ namespace BiblCal
 		}
 
 		//*******************************************************************************************
-		//*                           BIBLICAL CALENDAR PROGRAM (BiblCal)                           *
-		//*                                       Ver 10.42                                         *
-		//*               Main Form used to do Biblical calendar calculations                       *
+		//*                           Calculated Biblical Calendar PROGRAM (BiblCal)                           *
+		//*                                       Ver 11.0                                         *
+		//*               Main Form used to do Calculated Biblical Calendar calculations                       *
 		//*                                          -                                              *
 		//*   Written by:         Dale D. Donelson, 22 November 2006                                *
 		//*                      10140 E Brooks Rd., Lennon, Michigan                               *
@@ -480,7 +480,7 @@ namespace BiblCal
 		{
 			//Sets up the form for 'Holy Days' calculations.
 			txtYear.Text = Conversion.Str(TempYear);
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - HOLY DAYS / NEW MOONS - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - HOLY DAYS / NEW MOONS - www.chcpublications.net";
 			modBiblcalFunctions.Mode = "HolyDays";
 			modBiblcalFunctions.TempMode = "HolyDays";
 			modDocumentation.GetDocumentation();
@@ -520,7 +520,7 @@ namespace BiblCal
 		public void mnuLocalMoons_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up for form for 'Local New moons' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - LOCAL NEW MOONS - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - LOCAL NEW MOONS - www.chcpublications.net";
 			txtYear.Text = Conversion.Str(TempYear);
 			modBiblcalFunctions.Mode = "LocalMoons";
 			modBiblcalFunctions.TempMode = "LocalMoons";
@@ -560,7 +560,7 @@ namespace BiblCal
 		public void mnuSunset_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up the form for 'local Sunsets' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - LOCAL SUNSETS - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - LOCAL SUNSETS - www.chcpublications.net";
 			txtYear.Text = Conversion.Str(TempYear);
 			modBiblcalFunctions.Mode = "Sunset";
 			modBiblcalFunctions.TempMode = "Sunset";
@@ -603,7 +603,7 @@ namespace BiblCal
 		public void mnuTimes_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up the form for 'local Times' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - LOCAL TIMES - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - LOCAL TIMES - www.chcpublications.net";
 			txtYear.Text = Conversion.Str(TempYear);
 			modBiblcalFunctions.Mode = "Times";
 			modBiblcalFunctions.TempMode = "Times";
@@ -646,7 +646,7 @@ namespace BiblCal
 		public void mnuGolgotha_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up for form for the 'Golgotha' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - GOLGOTHA - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - GOLGOTHA - www.chcpublications.net";
 			modBiblcalFunctions.Mode = "Golgotha";
 			modBiblcalFunctions.TempMode = "Golgotha";
 			modDocumentation.GetDocumentation();
@@ -689,7 +689,7 @@ namespace BiblCal
 		public void mnuJordan_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up for form for the 'Jordan' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - JORDAN CROSSING - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - JORDAN CROSSING - www.chcpublications.net";
 			modBiblcalFunctions.Mode = "Jordan";
 			modBiblcalFunctions.TempMode = "Jordan";
 			modDocumentation.GetDocumentation();
@@ -732,7 +732,7 @@ namespace BiblCal
 		public void mnuFlood_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up for form for the 'Flood' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - FLOOD - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - FLOOD - www.chcpublications.net";
 			modBiblcalFunctions.Mode = "Flood";
 			modBiblcalFunctions.TempMode = "Flood";
 			modDocumentation.GetDocumentation();
@@ -775,7 +775,7 @@ namespace BiblCal
 		public void mnuCreation_Click(Object eventSender, EventArgs eventArgs)
 		{
 			//Sets up for form for the 'Creation' calculations.
-			frmHolyDays.DefInstance.Text = "Biblical Calendar - CREATION - www.chcpublications.net";
+			frmHolyDays.DefInstance.Text = "Calculated Biblical Calendar - CREATION - www.chcpublications.net";
 			modBiblcalFunctions.Mode = "Creation";
 			modBiblcalFunctions.TempMode = "Creation";
 			modDocumentation.GetDocumentation();

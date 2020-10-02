@@ -48,7 +48,7 @@ namespace BiblCal
 		}
 		//*******************************************************************************************
 		//*                               HEBREW CALENDAR PROGRAM                                   *
-		//*                                       Ver 10.42                                         *
+		//*                                       Ver 11.0                                         *
 		//*          Computes the start of the Rabbinic Hebrew months for a given Hebrew Year       *
 		//*                    Also shows the computed dates for the Holy Days                      *
 		//*                                          -                                              *

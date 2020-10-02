@@ -221,10 +221,10 @@ namespace BiblCal
 		public static bool MoonFlag = false;
 		public static string TempMode = "";
 		//*********************************************************************************************
-		//              Here it is Bruce, a way to adjust the date of Joshua's long day
+		//              Here it is Bruce, a way to adjust the date of Jeshua's long day
 		//              Just change the Julian Day number for it here in JDNJLD
-		public const double JDNJLD = 1170111.5d; //= Julian Day number of Joshua's long day
-		//Public Const JDNJLD = 1172298.5        '= Alternate Day number if Joshua's long day is 1 day sooner
+		public const double JDNJLD = 1170111.5d; //= Julian Day number of Jeshua's long day
+		//Public Const JDNJLD = 1172298.5        '= Alternate Day number if Jeshua's long day is 1 day sooner
 		public const double JDNJLDBench = 1170111.5d; //= Benchmark in case JDNJLD is changed (was 1172299 Leave this alone!)
 		public const double PI = 3.14159265358979d; //= Constant for PI
 		public const double VEQ = 6.79189999999999E-02d; //= Constant for Spring Equinox calculation
@@ -320,7 +320,7 @@ namespace BiblCal
 			TPrint(CRLF);
 			//End Code for Jubilee calendar**************************************************************
 
-			LY = GregorianYear + 0.265d; //bga- selects which new moon to start testing for year, was 0.277, 0.273
+			LY = GregorianYear + 0.256d; //bga- selects which new moon to start testing for year, was 0.277, 0.273, 0.265
 			if (LY >= 0)
 			{
 				LN = Math.Floor((LY - 1900) * 12.368277d);
@@ -505,7 +505,7 @@ namespace BiblCal
 					TPrint("These dates are for Israel and regions westward to the International Date Line." + CRLF);
 				}
 			}
-			LY = GregorianYear + 0.265d; //bga- selects which new moon to start testing for year, was 0.277, 0.273
+			LY = GregorianYear + 0.256d; //bga- selects which new moon to start testing for year, was 0.277, 0.273, 0.265
 			if (LY >= 0)
 			{
 				LN = Math.Floor((LY - 1900) * 12.368277d);

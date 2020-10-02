@@ -976,7 +976,7 @@ namespace BiblCal
             this.MinimizeBox = false;
             this.Name = "frmHolyDays";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Biblical Calendar - HOLY DAYS / NEW MOONS - www.chcpublications.net";
+            this.Text = "Calculated Biblical Calendar - HOLY DAYS / NEW MOONS - www.chcpublications.net";
             this.Activated += new System.EventHandler(this.frmHolyDays_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_KeyDown);

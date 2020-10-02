@@ -99,5 +99,10 @@ namespace BiblCal
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)
 		{
 		}
-	}
+
+        private void ToolTipMain_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+    }
 }

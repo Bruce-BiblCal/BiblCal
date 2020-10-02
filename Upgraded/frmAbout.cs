@@ -45,7 +45,7 @@ namespace BiblCal
 		}
 		//*******************************************************************************************
 		//*                               BIBLICAL CALENDAR PROGRAM                                 *
-		//*                                       Ver 10.42                                         *
+		//*                                       Ver 11.0                                         *
 		//*                 About Form used with Biblical calendar calculations                     *
 		//*                                          -                                              *
 		//*   Written by:         Dale D. Donelson, 22 November 2006                                *
