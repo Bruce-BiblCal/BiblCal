@@ -1,4 +1,6 @@
 
+using System;
+
 namespace BiblCal
 {
 	partial class frmHolyDays
@@ -978,7 +980,7 @@ namespace BiblCal
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Calculated Biblical Calendar - HOLY DAYS / NEW MOONS - www.chcpublications.net";
             this.Activated += new System.EventHandler(this.frmHolyDays_Activated);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_KeyDown);
             this.MainMenu1.ResumeLayout(false);
             this.MainMenu1.PerformLayout();

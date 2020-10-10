@@ -12,6 +12,7 @@ namespace BiblCal
 	internal partial class frmHolyDays
 		: System.Windows.Forms.Form
 	{
+		bool isExiting = false;
 
 		public frmHolyDays()
 			: base()
@@ -75,6 +76,7 @@ namespace BiblCal
 		private void Form_Load()
 		{
 			frmSplash.DefInstance.Show();
+			
 			modBiblcalFunctions.Mode = "HolyDays";
 			modBiblcalFunctions.CRLF = "\r" + "\n"; //Define Carriage Return and line feed string
 			modDocumentation.GetDocumentation();
@@ -445,10 +447,13 @@ namespace BiblCal
 
 		public void mnuExit_Click(Object eventSender, EventArgs eventArgs)
 		{
+			this.isExiting = true;
+
+			//If changes were made to user data then save them.
 			if (modBiblcalFunctions.ChangeFlag)
 			{
 				modBiblcalFunctions.WriteUserData();
-			} //If changes were made to user data then save them.
+			}
 			//Unload all forms
 			frmAbout.DefInstance.Close();
 			frmBackColor.DefInstance.Close();
@@ -461,13 +466,16 @@ namespace BiblCal
 			this.Close();
 		}
 
-		private void form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
+		private void Form_FormClosing(Object eventSender, FormClosingEventArgs eventArgs)
 		{
 			int Cancel = (eventArgs.Cancel) ? 1 : 0;
-			int unloadmode = (int) eventArgs.CloseReason;
+			CloseReason closeReason = eventArgs.CloseReason;
 			try
 			{
-				mnuExit_Click(mnuExit, new EventArgs()); //User clicked on the X button on top corner of window.
+				if (closeReason == CloseReason.UserClosing && !this.isExiting)
+                {
+					mnuExit_Click(mnuExit, new EventArgs()); //User clicked on the X button on top corner of window.
+				}				
 				Environment.Exit(0);
 			}
 			finally
@@ -1508,5 +1516,5 @@ namespace BiblCal
 		{
 			Application.Run(CreateInstance());
 		}
-	}
+    }
 }
