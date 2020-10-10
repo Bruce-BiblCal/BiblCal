@@ -253,7 +253,7 @@ namespace BiblCal
             this.chkGregYear.Location = new System.Drawing.Point(16, 72);
             this.chkGregYear.Name = "chkGregYear";
             this.chkGregYear.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chkGregYear.Size = new System.Drawing.Size(369, 17);
+            this.chkGregYear.Size = new System.Drawing.Size(386, 17);
             this.chkGregYear.TabIndex = 20;
             this.chkGregYear.Text = "Check if you want to start calculations on the first of the Gregorian Year.";
             this.ToolTipMain.SetToolTip(this.chkGregYear, "Changes start from 1st month of the Biblical Calendar to 1st of Gregorian Calenda" +
