@@ -75,7 +75,7 @@ namespace BiblCal
 		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://www.mobilize.net/vbtonet/ewis/ewi2080
 		private void Form_Load()
 		{
-			frmSplash.DefInstance.Show();
+			frmSplash.DefInstance.ShowDialog();
 			
 			modBiblcalFunctions.Mode = "HolyDays";
 			modBiblcalFunctions.CRLF = "\r" + "\n"; //Define Carriage Return and line feed string
@@ -92,8 +92,6 @@ namespace BiblCal
 			modBiblcalFunctions.LoadBiblicalVariables(); //Load up the variables used in this form.
 			frmHolyDays.DefInstance.txtYear.SelectionStart = 0;
 			frmHolyDays.DefInstance.txtYear.SelectionLength = 8;
-			frmHolyDays.DefInstance.txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			frmHolyDays.DefInstance.txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 		}
 
 		//This is the 'Holy Days' module command button
@@ -493,8 +491,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "HolyDays";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 			chkGregYear.Visible = false;
 			cmdHolyDays.Visible = true; //Show the 'Holy Days' button
 			cmdHolyDays.TabIndex = 1; //Set up the TAB key.
@@ -534,8 +532,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "LocalMoons";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 			chkGregYear.Visible = false;
 			cmdHolyDays.Visible = false;
 			cmdMonths.Visible = false;
@@ -574,8 +572,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "Sunset";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(1080, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(7695, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(1080, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(7695, 8910, 594));
 			chkGregYear.Visible = true;
 			chkGregYear.TabIndex = 2; //Set up the TAB key.
 			modBiblcalFunctions.CheckGregYearChange = true; //Don't let the chkGregYear change cause program to run
@@ -615,10 +613,10 @@ namespace BiblCal
 			txtYear.Text = Conversion.Str(TempYear);
 			modBiblcalFunctions.Mode = "Times";
 			modBiblcalFunctions.TempMode = "Times";
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(1080, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(7695, 8910, 594));
-			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(1080, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(7695, 8910, 594));
+			modDocumentation.GetDocumentation();
 			chkGregYear.Visible = true;
 			chkGregYear.TabIndex = 3; //Set up the TAB key.
 			modBiblcalFunctions.CheckGregYearChange = true; //Don't let the chkGregYear change cause program to run
@@ -659,8 +657,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "Golgotha";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 			TempYear = Convert.ToInt32(Conversion.Val(txtYear.Text));
 			txtYear.Text = "28";
 			txtYear2.Text = "35";
@@ -702,8 +700,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "Jordan";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 			TempYear = Convert.ToInt32(Conversion.Val(txtYear.Text));
 			txtYear.Text = "-1525";
 			txtYear2.Text = "-1495";
@@ -745,8 +743,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "Flood";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 			TempYear = Convert.ToInt32(Conversion.Val(txtYear.Text));
 			txtYear.Text = "-2400";
 			txtYear2.Text = "-2300";
@@ -788,8 +786,8 @@ namespace BiblCal
 			modBiblcalFunctions.TempMode = "Creation";
 			modDocumentation.GetDocumentation();
 			txtOut.Text = modBiblcalFunctions.Instructions;
-			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
-			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
+//			txtOut.Top = Convert.ToInt32(Support.ToPixelsUserY(720, 0, 8910, 594));
+//			txtOut.Height = Convert.ToInt32(Support.ToPixelsUserHeight(8055, 8910, 594));
 			TempYear = Convert.ToInt32(Conversion.Val(txtYear.Text));
 			txtYear.Text = "-4040";
 			txtYear2.Text = "-3965";
