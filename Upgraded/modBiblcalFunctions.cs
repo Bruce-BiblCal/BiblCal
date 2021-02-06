@@ -368,7 +368,7 @@ namespace BiblCal
 				if (JDD > JDT)
 				{ //Check for early or late year start.          'Line 1774
 					MayBeEarlyOrLate = true; //Used by Sub BiblicalToJulian
-					TPrint("If this spring's barley harvest is/was early, this New Moon will begin the New Year. " + CRLF);
+					TPrint("If this Spring's barley harvest is/was early, this New Moon will begin the New Year. " + CRLF);
 					EarlyYear = true; //Set EarlyYear flag true if it is an early year.
 				}
 				else
@@ -472,7 +472,7 @@ namespace BiblCal
 				if (EarlyYear)
 				{ //Line 2190
 					TPrint(CRLF);
-					TPrint("If this spring's barley harvest is/was late, God's Holy Days are:" + CRLF);
+					TPrint("If this Spring's barley harvest is/was late, God's Holy Days are:" + CRLF);
 					LN -= 5;
 				}
 
@@ -1712,36 +1712,39 @@ namespace BiblCal
 			try
 			{
 				XmlTextReader reader = new XmlTextReader("UserData.xml");
-			 
-				while (reader.Read() && Index <= 500)
+
+				while (reader.Read() && Index < 500)
 				{
 					// Do some work here on the data.
 					var name = reader.Name;
 
 					if (reader.NodeType == XmlNodeType.Element & "Location".Equals(name))
-                    {
+					{
 						reader.MoveToAttribute("name");
 						LocationName[Index] = reader.Value;
-
 						reader.MoveToAttribute("lat");
 						DegLat[Index] = Double.Parse(reader.Value);
-
 						reader.MoveToAttribute("long");
 						DegLon[Index] = Double.Parse(reader.Value);
-
 						reader.MoveToAttribute("gmt");
 						GMTOffset[Index] = reader.Value;
-
 						reader.MoveToAttribute("selected");
 						var isSelected = Boolean.Parse(reader.Value);
 
 						if (isSelected)
-                        {
+						{
 							CurrentLocation = LocationName[Index];
 						}
 						Index++;
 					}
 				}
+				NumberOfLocations = Index;
+
+				if (CurrentLocation.Length == 0)
+                {
+					CurrentLocation = LocationName[0];
+                }
+
 				reader.Close();
 				ChangeFlag = true;
 				frmHolyDays.DefInstance.lblChange.Visible = true;
@@ -1782,7 +1785,7 @@ namespace BiblCal
 					writer.WriteStartElement("configuration");
 					writer.WriteStartElement("Locations");
 					writer.WriteWhitespace(CRLF);
-					for (Index = 0; Index < NumberOfLocations; Index++)
+					for (Index = 0; Index <= NumberOfLocations; Index++)
                     {
 						bool isSelected = false;
 						string locName = LocationName[Index];

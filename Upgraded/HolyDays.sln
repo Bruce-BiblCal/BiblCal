@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpgradeHelpers.FontHelper",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpgradeHelpers.NotUpgradeHelper", "..\UpgradeSupport\UpgradeHelpers.NotUpgradeHelper\UpgradeHelpers.NotUpgradeHelper.csproj", "{4D15E9B3-ECF3-4267-99A4-83C25FFD8EC4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "..\Installer\Installer.vdproj", "{ADBE8FAF-0B09-4D5E-B537-690459348F03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -180,6 +182,12 @@ Global
 		{4D15E9B3-ECF3-4267-99A4-83C25FFD8EC4}.Release|x64.Build.0 = Release|x64
 		{4D15E9B3-ECF3-4267-99A4-83C25FFD8EC4}.Release|x86.ActiveCfg = Release|x86
 		{4D15E9B3-ECF3-4267-99A4-83C25FFD8EC4}.Release|x86.Build.0 = Release|x86
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Debug|x64.ActiveCfg = Debug
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Debug|x86.ActiveCfg = Debug
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|Mixed Platforms.ActiveCfg = Release
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|x64.ActiveCfg = Release
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

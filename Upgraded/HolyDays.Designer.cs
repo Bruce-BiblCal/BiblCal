@@ -240,7 +240,7 @@ namespace BiblCal
             this.cboLocation.Text = "cboLocation";
             this.ToolTipMain.SetToolTip(this.cboLocation, "To edit, add or delete a location (Press ENTER after the  location name)");
             this.cboLocation.Visible = false;
-            this.cboLocation.SelectionChangeCommitted += new System.EventHandler(this.cboLocation_SelectionChangeCommitted);
+            this.cboLocation.SelectedIndexChanged += new System.EventHandler(this.cboLocation_SelectedIndexChanged);
             this.cboLocation.TextChanged += new System.EventHandler(this.cboLocation_TextChanged);
             this.cboLocation.Enter += new System.EventHandler(this.cboLocation_Enter);
             this.cboLocation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cboLocation_KeyPress);

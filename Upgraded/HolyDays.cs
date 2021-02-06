@@ -858,8 +858,7 @@ namespace BiblCal
 
 		private void cboLocation_SelectionChangeCommitted(Object eventSender, EventArgs eventArgs)
 		{
-			modBiblcalFunctions.CurrentLocation = cboLocation.Text;
-			modBiblcalFunctions.SetupLocation();
+			
 		}
 
 		private void cboLocation_Enter(Object eventSender, EventArgs eventArgs)
@@ -1038,7 +1037,7 @@ namespace BiblCal
 				if (KeyAscii == ((int) Keys.Space) || KeyAscii == Strings.Asc(','))
 				{
 					KeyAscii = 0;
-					txtLongDeg.Focus();
+					txtLatDir.Focus();
 				}
 				else
 				{
@@ -1514,6 +1513,12 @@ namespace BiblCal
 		static void Main()
 		{
 			Application.Run(CreateInstance());
+		}
+
+        private void cboLocation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+			modBiblcalFunctions.CurrentLocation = cboLocation.Text;
+			modBiblcalFunctions.SetupLocation();
 		}
     }
 }
