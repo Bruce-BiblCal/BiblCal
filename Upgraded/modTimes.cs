@@ -39,7 +39,7 @@ namespace BiblCal
 			Header = "  DATE    JULIAN DAY #  SUNRISE   SUNSET   MOONRISE  % ILLUM.  MOONSET  % ILLUM" + modBiblcalFunctions.CRLF;
 			if (modBiblcalFunctions.ChangeFlag)
 			{
-				modBiblcalFunctions.WriteUserData();
+				modBiblcalFunctions.WriteUserDataXML();
 			}
 			modBiblcalFunctions.SunsetFlag = true; //Tell other routines 'Sunset' is active
 			modBiblcalFunctions.InitializeVariables();

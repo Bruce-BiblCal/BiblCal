@@ -1,9 +1,11 @@
 using Microsoft.VisualBasic;
+using Microsoft.Win32;
 using System;
 using System.Drawing;
 using System.Media;
 using UpgradeHelpers.Gui;
 using UpgradeHelpers.Helpers;
+using System.Xml;
 
 namespace BiblCal
 {
@@ -1660,55 +1662,6 @@ namespace BiblCal
 						frmHolyDays.DefInstance.lblChange.Visible = true;
 					}
 				}
-				//Read in the users selected Colors
-				FileSystem.Input(1, ref A);
-				frmHebrew.DefInstance.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.fraGregorian.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.fraHebrew.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.fraJulian.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.lblGDayOfWeek.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.lblBDayOfWeek.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.lblMolad1.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.lblRules.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmAbout.DefInstance.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmAbout.DefInstance.txtAbout.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmHolyDays.DefInstance.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmHolyDays.DefInstance.txtOut.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmHebrew.DefInstance.txtOut.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.Input(1, ref A);
-				frmConversion.DefInstance.fraJulianCal.BackColor = ColorTranslator.FromOle(Convert.ToInt32(A));
-				FileSystem.FileClose(1);
-
-				frmHolyDays.DefInstance.chkEJW.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.lblLat.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.lblLong.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.lblGMT.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.chkGregYear.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.lblLocation.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.txtVerification.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmHolyDays.DefInstance.txtWorking.BackColor = frmHolyDays.DefInstance.BackColor;
-				frmConversion.DefInstance.lblHYearType.BackColor = frmConversion.DefInstance.fraHebrew.BackColor;
-				frmConversion.DefInstance.lblGYearType.BackColor = frmConversion.DefInstance.fraGregorian.BackColor;
-				frmConversion.DefInstance.lblMolad.BackColor = frmConversion.DefInstance.fraHebrew.BackColor;
-				frmConversion.DefInstance.txtControl.BackColor = frmConversion.DefInstance.BackColor;
-				frmConversion.DefInstance.lblTabInd.BackColor = frmConversion.DefInstance.fraHebrew.BackColor;
-				frmConversion.DefInstance.chkOnTop.BackColor = frmConversion.DefInstance.fraHebrew.BackColor;
-				frmConversion.DefInstance.txtControl.BackColor = frmConversion.DefInstance.BackColor;
-				frmConversion.DefInstance.lblHDay.BackColor = frmConversion.DefInstance.lblRules.BackColor;
 				int tempForEndVar2 = NumberOfLocations;
 				for (Index = 0; Index <= tempForEndVar2; Index++)
 				{ //Build the locations drop down combo box
@@ -1746,23 +1699,117 @@ namespace BiblCal
 				FileSystem.PrintLine(1, DegLat[Index].ToString()); //Send out the Latitude to disk
 				FileSystem.PrintLine(1, GMTOffset[Index]); //Send out the GMT offset to disk
 			}
-			//Write out the users selected Colors
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmHebrew.DefInstance.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.fraGregorian.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.fraHebrew.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.fraJulian.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.lblGDayOfWeek.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.lblBDayOfWeek.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.lblMolad1.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.lblRules.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmAbout.DefInstance.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmAbout.DefInstance.txtAbout.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmHolyDays.DefInstance.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmHolyDays.DefInstance.txtOut.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmHebrew.DefInstance.txtOut.BackColor).ToString());
-			FileSystem.PrintLine(1, ColorTranslator.ToOle(frmConversion.DefInstance.fraJulianCal.BackColor).ToString());
 			FileSystem.FileClose(1); //Close the output file
+			ChangeFlag = false;
+			frmHolyDays.DefInstance.lblChange.Visible = false;
+		}
+
+		//Read the user data from the disk
+		internal static void ReadUserDataXML()
+		{
+			int Count = 0; //Error count
+			int Index = 0; //Index pointer for arrays
+			try
+			{
+				XmlTextReader reader = new XmlTextReader("UserData.xml");
+			 
+				while (reader.Read() && Index <= 500)
+				{
+					// Do some work here on the data.
+					var name = reader.Name;
+
+					if (reader.NodeType == XmlNodeType.Element & "Location".Equals(name))
+                    {
+						reader.MoveToAttribute("name");
+						LocationName[Index] = reader.Value;
+
+						reader.MoveToAttribute("lat");
+						DegLat[Index] = Double.Parse(reader.Value);
+
+						reader.MoveToAttribute("long");
+						DegLon[Index] = Double.Parse(reader.Value);
+
+						reader.MoveToAttribute("gmt");
+						GMTOffset[Index] = reader.Value;
+
+						reader.MoveToAttribute("selected");
+						var isSelected = Boolean.Parse(reader.Value);
+
+						if (isSelected)
+                        {
+							CurrentLocation = LocationName[Index];
+						}
+						Index++;
+					}
+				}
+				reader.Close();
+				ChangeFlag = true;
+				frmHolyDays.DefInstance.lblChange.Visible = true;
+
+				int tempForEndVar2 = Index-1;
+				for (Index = 0; Index <= tempForEndVar2; Index++)
+				{ //Build the locations drop down combo box
+					frmHolyDays.DefInstance.cboLocation.AddItem(LocationName[Index]);
+				}
+				frmHolyDays.DefInstance.cboLocation.Text = CurrentLocation; //Select location to set up
+				SetupLocation(); //Set up location into the text boxes.
+			}
+			catch
+			{
+				Count++;
+				if (Count == 2)
+				{
+					return;
+				} //Prevent major error in event of drive malfunction.
+				WriteUserDataXML();
+				return;
+			}
+		}
+
+		//Write the user data to the disk
+		internal static void WriteUserDataXML()
+		{
+			bool Done = false;
+			int Index = 0; //Index pointer for arrays
+			NumberOfLocations = frmHolyDays.DefInstance.cboLocation.Items.Count - 1; //Get number of locations zero indexed
+
+			try
+			{
+				XmlWriter writer = XmlTextWriter.Create("UserData.xml");
+				while (!Done)
+				{
+					writer.WriteStartDocument();
+					writer.WriteStartElement("configuration");
+					writer.WriteStartElement("Locations");
+					writer.WriteWhitespace(CRLF);
+					for (Index = 0; Index < NumberOfLocations; Index++)
+                    {
+						bool isSelected = false;
+						string locName = LocationName[Index];
+						if (locName.Equals(CurrentLocation))
+                        {
+							isSelected = true;
+                        }
+						writer.WriteStartElement("Location");
+						writer.WriteAttributeString("name", locName);
+						writer.WriteAttributeString("lat", DegLat[Index].ToString());
+						writer.WriteAttributeString("long", DegLon[Index].ToString());
+						writer.WriteAttributeString("gmt", GMTOffset[Index]);
+						writer.WriteAttributeString("selected", isSelected ? "true" : "false");
+						writer.WriteEndElement();
+						writer.WriteWhitespace(CRLF);
+                    }
+//					writer.WriteEndElement();
+					writer.WriteEndDocument();
+					Done = true;
+                }
+				writer.Close();
+			}
+			catch
+			{
+				return;
+			}
+			
 			ChangeFlag = false;
 			frmHolyDays.DefInstance.lblChange.Visible = false;
 		}

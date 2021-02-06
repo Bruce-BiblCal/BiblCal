@@ -81,7 +81,8 @@ namespace BiblCal
 			modBiblcalFunctions.CRLF = "\r" + "\n"; //Define Carriage Return and line feed string
 			modDocumentation.GetDocumentation();
 			frmHolyDays.DefInstance.txtOut.Text = modBiblcalFunctions.Instructions;
-			modBiblcalFunctions.ReadUserData(); //Load in the locations saved on the drive.
+			// Migrate existing User Data to xml format? First time run?
+			modBiblcalFunctions.ReadUserDataXML(); //Load in the locations saved on the drive.
 			modBiblcalFunctions.ChangeFlag = false; //Flag to indicate changes were made to data.
 			frmHolyDays.DefInstance.lblChange.Visible = false;
 			modBiblcalFunctions.MonthsFlag = false; //Clear the flag so months are not calculated yet.
@@ -141,7 +142,7 @@ namespace BiblCal
 			txtOut.Text = "";
 			if (modBiblcalFunctions.ChangeFlag)
 			{
-				modBiblcalFunctions.WriteUserData();
+				modBiblcalFunctions.WriteUserDataXML();
 			}
 			TempYear = Convert.ToInt32(Conversion.Val(txtYear.Text));
 			modBiblcalFunctions.CalcNewMoons();
@@ -320,7 +321,7 @@ namespace BiblCal
 						modBiblcalFunctions.NumberOfLocations++;
 						modBiblcalFunctions.CurrentLocation = cboLocation.Text;
 						modBiblcalFunctions.GetLocation();
-						modBiblcalFunctions.WriteUserData();
+						modBiblcalFunctions.WriteUserDataXML();
 					}
 				}
 			}
@@ -349,7 +350,7 @@ namespace BiblCal
 						modBiblcalFunctions.DegLon[IndexNumber] = Longitude;
 						modBiblcalFunctions.GMTOffset[IndexNumber] = txtGMT.Text;
 						modBiblcalFunctions.GetLocation();
-						modBiblcalFunctions.WriteUserData();
+						modBiblcalFunctions.WriteUserDataXML();
 					}
 					else
 					{
@@ -388,7 +389,7 @@ namespace BiblCal
 						modBiblcalFunctions.CurrentLocation = modBiblcalFunctions.LocationName[0];
 						cboLocation.Text = modBiblcalFunctions.CurrentLocation;
 						modBiblcalFunctions.GetLocation();
-						modBiblcalFunctions.WriteUserData();
+						modBiblcalFunctions.WriteUserDataXML();
 					}
 				}
 			}
@@ -406,7 +407,7 @@ namespace BiblCal
 
 		public void mnuSave_Click(Object eventSender, EventArgs eventArgs)
 		{
-			modBiblcalFunctions.WriteUserData();
+			modBiblcalFunctions.WriteUserDataXML();
 		}
 
 		public void mnuPrint_Click(Object eventSender, EventArgs eventArgs)
@@ -450,7 +451,7 @@ namespace BiblCal
 			//If changes were made to user data then save them.
 			if (modBiblcalFunctions.ChangeFlag)
 			{
-				modBiblcalFunctions.WriteUserData();
+				modBiblcalFunctions.WriteUserDataXML();
 			}
 			//Unload all forms
 			frmAbout.DefInstance.Close();

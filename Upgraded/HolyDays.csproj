@@ -112,6 +112,7 @@
       <Project>{9C1C0B1A-85CF-4F47-B5B4-9CEB33EF5409}</Project>
       <Name>UpgradeBiblCalSupport</Name>
     </ProjectReference>
+    <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="frmEaster.Designer.cs">
@@ -176,6 +177,9 @@
     <Compile Include="HolyDays.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Content Include="UserData.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="frmEaster.resX">
       <DependentUpon>frmEaster.cs</DependentUpon>
     </EmbeddedResource>

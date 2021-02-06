@@ -22,7 +22,7 @@ namespace BiblCal
 			modBiblcalFunctions.TempYear = Convert.ToInt32(Conversion.Val(frmHolyDays.DefInstance.txtYear.Text));
 			if (modBiblcalFunctions.ChangeFlag)
 			{
-				modBiblcalFunctions.WriteUserData();
+				modBiblcalFunctions.WriteUserDataXML();
 			}
 			modBiblcalFunctions.SunsetFlag = true; //Tell other routines 'Sunset' is active
 			modBiblcalFunctions.LocalCalcFlag = true; //Set up to do local calculations
