@@ -6,6 +6,7 @@ using System.Media;
 using UpgradeHelpers.Gui;
 using UpgradeHelpers.Helpers;
 using System.Xml;
+using System.Diagnostics;
 
 namespace BiblCal
 {
@@ -235,6 +236,8 @@ namespace BiblCal
 		// http://www.danielrevelation.com/sda/reference/synch.html
 		// http://www.wake-up.org/Charts/Jubileev7view.pdf
 		// http://www.bibleplus.com/creation/datingcreation.htm
+		public static string Copyright = "                                Copyright 1986-2021"; // Copyright year
+		public static string Version = "Version " + FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).FileMajorPart.ToString() + "." + FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).FileMinorPart.ToString() + "." + FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).FilePrivatePart.ToString();
 
 		//This is the 'HolyDays' module
 		internal static void CalcHolyDays()

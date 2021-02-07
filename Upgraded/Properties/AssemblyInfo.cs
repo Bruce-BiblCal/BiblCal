@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion=("1.0.*")]
 
 
-[assembly: AssemblyVersion("10.40.*")]
+[assembly: AssemblyVersion("11.0.*")]
 
 
 [assembly: ClassInterface(ClassInterfaceType.AutoDual)]

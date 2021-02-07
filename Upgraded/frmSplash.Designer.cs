@@ -129,7 +129,7 @@ namespace BiblCal
             this.lblCopyright.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblCopyright.Size = new System.Drawing.Size(186, 24);
             this.lblCopyright.TabIndex = 4;
-            this.lblCopyright.Text = "Copyright 1986 - 2020";
+            this.lblCopyright.Text = "Copyright 1986 - 2021";
             // 
             // lblCompany
             // 
