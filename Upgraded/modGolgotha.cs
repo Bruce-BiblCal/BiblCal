@@ -19,7 +19,6 @@ namespace BiblCal
 		{
 			double Year2 = 0;
 			Row = 0;
-			int ArrayIndex = 0;
 			modBiblcalFunctions.FloodFlag = true; //Tell other subroutines this is a Flood run.
 			frmHolyDays.DefInstance.chkEJW.CheckState = CheckState.Unchecked;
 			frmHolyDays.DefInstance.txtOut.Text = "";

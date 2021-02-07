@@ -9,13 +9,11 @@ namespace BiblCal
 
 		internal static void DoSunsets()
 		{
-
 			//Computes the Sunsets for the Users location
 			//Dim ColumnCount As Integer                        'Counter for columns
 			double TempAA = 0;
 			double TempJI = 0;
 			int Column = 0;
-			string GMTOffset = ""; //GMT offset string
 			int DaysToPrint = 0;
 			int SkipDays = 0;
 

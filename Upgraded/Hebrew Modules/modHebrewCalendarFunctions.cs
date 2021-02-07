@@ -190,7 +190,6 @@ namespace BiblCal
 			//Algorithm is found in Astronomical Algorithms Second Edition by Jean Meeus pages 71 and 72.
 
 			double B = 0; //= B in book
-
 			int MonthNum = 3; //= Number of Month //Start with March
 			double x = YearNum; //= X in book
 			//*******************************************************************************
@@ -389,7 +388,6 @@ namespace BiblCal
 		//Convert from Gregorian date to Julian day number.
 		internal static double ConvertToJulian2(int MonthNum, double DayNum, double YearNum)
 		{
-
 			double result = 0;
 			double C = 0; //In the book
 			double E = 0; //In the book

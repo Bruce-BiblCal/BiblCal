@@ -188,6 +188,7 @@ Global
 		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|Mixed Platforms.ActiveCfg = Release
 		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|x64.ActiveCfg = Release
 		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|x86.ActiveCfg = Release
+		{ADBE8FAF-0B09-4D5E-B537-690459348F03}.Release|x86.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
