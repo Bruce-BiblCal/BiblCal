@@ -157,12 +157,12 @@ namespace BiblCal
 			txtOut.Text = txtOut.Text + Environment.NewLine + Environment.NewLine + "Day of Atonement is ";
 			modBiblcalFunctions.JD += 9; //Add 9 days to get the Day of Atonement
 			PrintDayAndDate2(modBiblcalFunctions.JD); //Print date of Day of Atonement
-			txtOut.Text = txtOut.Text + Environment.NewLine + Environment.NewLine + "Feast of Tabernacles starts ";
-			modBiblcalFunctions.JD += 5; //Add 5 days to get the Feast of Tabernacles
-			PrintDayAndDate2(modBiblcalFunctions.JD); //Print start date of Feast of Tabernacles
+			txtOut.Text = txtOut.Text + Environment.NewLine + Environment.NewLine + "Feast of Booths starts ";
+			modBiblcalFunctions.JD += 5; //Add 5 days to get the Feast of Booths
+			PrintDayAndDate2(modBiblcalFunctions.JD); //Print start date of Feast of Booths
 			txtOut.Text = txtOut.Text + Environment.NewLine + "and runs through ";
-			modBiblcalFunctions.JD += 6; //Add 6 more days for Feast of Tabernacles
-			PrintDayAndDate2(modBiblcalFunctions.JD); //Print end date of Feast of Tabernacles
+			modBiblcalFunctions.JD += 6; //Add 6 more days for Feast of Booths
+			PrintDayAndDate2(modBiblcalFunctions.JD); //Print end date of Feast of Booths
 			txtOut.Text = txtOut.Text + Environment.NewLine + Environment.NewLine + "Last Great Day is ";
 			modBiblcalFunctions.JD++; //Add 1 day to get the Last Great Day
 			PrintDayAndDate2(modBiblcalFunctions.JD); //Print date of Last Great Day

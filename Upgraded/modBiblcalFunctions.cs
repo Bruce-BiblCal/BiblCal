@@ -463,7 +463,7 @@ namespace BiblCal
 				TPrint("The Day of Atonement is"); //Line 2110
 				AA += 9; //Add nine days
 				PrintDayAndDate();
-				TPrint("The Feast of Tabernacles (Ingathering) begins on"); //Line 2130
+				TPrint("The Feast of Booths (Ingathering) begins on"); //Line 2130
 				AA += 5; //Add five days
 				PrintDayAndDate();
 				TPrint("and ends on"); //Line 2150
